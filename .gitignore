@@ -1,0 +1,4 @@
+.idea
+db.sqlite3
+OnlineStore/__pycache__
+!**/__pycache__/

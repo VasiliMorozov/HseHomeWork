@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="{% url 'products:index' %}" method="get">
+    <input type="submit" value="Home">
+</form>
+
+    <h2>{{ product.name }}</h2>
+    category: {{ product.category }}
+    <br>
+    id: {{ product.id }}
+    <br>
+    <br>
+    <form action="{% url 'products:mode' product.id %}" method="get">
+    <input type="submit" value="Modyfy">
+    </form>
+    <form action="{% url 'products:delete' product.id %}" method="get">
+    <input type="submit" value="Delete">
+    </form>
+</body>
+</html>
